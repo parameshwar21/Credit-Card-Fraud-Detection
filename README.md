@@ -39,7 +39,7 @@ Time	V1	V2	...	V28	Amount	Class
 
 1️⃣ Clone the repository:
 
-git clone https://github.com/yourusername/credit-card-fraud-detection.git
+git clone https://github.com/parameshwar21/credit-card-fraud-detection.git
 cd credit-card-fraud-detection
 
 
