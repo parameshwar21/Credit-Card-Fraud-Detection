@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Credit Card Fraud Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        h2 { color: #333; }
+        .result-table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+        .result-table th, .result-table td { border: 1px solid #ddd; padding: 8px; text-align: center; }
+        .result-table th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+
+<h2>Credit Card Fraud Detection</h2>
+
+<form action="/predict" method="POST" enctype="multipart/form-data">
+    <label>Upload CSV with columns V1–V28 and Amount:</label><br><br>
+    <input type="file" name="file" accept=".csv" required><br><br>
+    <button type="submit">Predict</button>
+</form>
+
+<div>
+    {% if prediction %}
+        {{ prediction|safe }}
+    {% endif %}
+</div>
+
+</body>
+</html>

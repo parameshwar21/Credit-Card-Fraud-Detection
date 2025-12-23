@@ -1,0 +1,6 @@
+DATA_PATH = "data/creditcard.csv"
+SCALER_PATH = "models/scaler.pkl"
+MODEL_PATH = "models/fraud_model.pkl"
+REPORT_PATH = "results/classification_report.txt"
+CM_IMAGE_PATH = "results/confusion_matrix.png"
+ROC_IMAGE_PATH = "results/roc_curve.png"
